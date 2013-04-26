@@ -33,6 +33,12 @@ Vagrant.configure("2") do |config|
   #   slave.vm.network :private_network, ip: "33.33.33.20"
   # end
 
+  # config.vm.define :slave2 do |slave2|
+  #   slave2.vm.hostname = "slave2.vm"
+  #   slave2.vm.network :private_network, ip: "33.33.33.30"
+  # end
+
+
   #
   # View the documentation for the provider you're using for more
   # information on available options.

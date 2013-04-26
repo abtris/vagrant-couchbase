@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /vagrant/
 file="/vagrant/couchbase-server-enterprise_x86_2.0.1.deb"
 if [ -f "$file" ]
 then
