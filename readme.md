@@ -18,6 +18,8 @@ and gem
 
 Documentation: [http://www.couchbase.com/develop/ruby/current](http://www.couchbase.com/develop/ruby/current)
 
+Code examples: [https://github.com/couchbaselabs/DeveloperDay](https://github.com/couchbaselabs/DeveloperDay)
+
 Make hello world:
 
 ```ruby
