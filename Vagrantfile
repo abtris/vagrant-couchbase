@@ -19,6 +19,8 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
 
+  config.vm.provision :shell, :path => "install.sh"
+
   config.vm.define :master do |master|
     master.vm.hostname = "master.vm"
     master.vm.network :forwarded_port, guest: 8091, host: 8091
@@ -26,10 +28,10 @@ Vagrant.configure("2") do |config|
     master.vm.network :private_network, ip: "33.33.33.10"
   end
 
-  config.vm.define :slave do |slave|
-    slave.vm.hostname = "slave.vm"
-    slave.vm.network :private_network, ip: "33.33.33.20"
-  end
+  # config.vm.define :slave do |slave|
+  #   slave.vm.hostname = "slave.vm"
+  #   slave.vm.network :private_network, ip: "33.33.33.20"
+  # end
 
   #
   # View the documentation for the provider you're using for more
