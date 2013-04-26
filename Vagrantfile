@@ -22,6 +22,7 @@ Vagrant.configure("2") do |config|
   config.vm.define :master do |master|
     master.vm.hostname = "master.vm"
     master.vm.network :forwarded_port, guest: 8091, host: 8091
+    master.vm.network :forwarded_port, guest: 8092, host: 8092
     master.vm.network :private_network, ip: "33.33.33.10"
   end
 
