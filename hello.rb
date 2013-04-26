@@ -1,13 +1,13 @@
 require 'rubygems'
 require 'couchbase'
 
-client = Couchbase.connect(:bucket => "beer-sample",
+client = Couchbase.connect(:bucket => "gamesim-sample",
                            :hostname => "33.33.33.10")
 
-beer = client.get("aass_brewery-juleol")
-puts "#{beer['name']}, ABV: #{beer['abv']}"
+player = client.get("Aaron0")
+puts "#{player['experience']}, hitpoints: #{player['hitpoints']}"
 
-beer['comment'] = "Random beer from Norway"
-client.replace("aass_brewery-juleol", beer)
+player['comment'] = "Random beer from Norway"
+client.replace("Aaron0", player)
 
 client.disconnect
