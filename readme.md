@@ -35,4 +35,8 @@ client.replace("aass_brewery-juleol", beer)
 
 client.disconnect
 ```    
-    
+
+Puppet 
+- [https://github.com/blom/puppet-couchbase](https://github.com/blom/puppet-couchbase)
+Chef
+- [https://github.com/getaroom/chef-couchbase](https://github.com/getaroom/chef-couchbase)
