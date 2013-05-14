@@ -1,2 +1,3 @@
 .vagrant
 *.deb
+*.json
